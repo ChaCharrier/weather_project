@@ -1,0 +1,8 @@
+{"cities" : [
+    {"id" : 0, "name" : "Niort"},
+    {"id" : 1, "name" : "London"},
+    {"id" : 2, "name" : "Paris"},
+    {"id" : 3, "name" : "Madrid"},
+    {"id" : 4, "name" : "Strasbourg"}
+]
+}
