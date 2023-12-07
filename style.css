@@ -1,10 +1,15 @@
+:root {
+    --main_blue: #293251;
+    --lavender_blue : #a1c4fd;
+    --light_blue : #c2e9fb;
+}
 * {
     box-sizing: border-box;
     padding: 0;
 }
 
 body {
-    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+    background: linear-gradient(to right, var(--lavender_blue), var(--light_blue), var(--light_blue), var(--light_blue));
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -30,25 +35,12 @@ body {
     padding: 15px;
     margin: 0 auto;
     font-size: 1.6em;
-    color: #293251;
-}
-
-.notification {
-    background-color: #f8d7da;
-    display: none;
-}
-
-.notification p {
-    color: #721c24;
-    font-size: 1.2em;
-    margin: 0;
-    text-align: center;
-    padding: 10px 0;
+    color: var(--main_blue);
 }
 
 .weather-container {
     height: 260px;
-    background-color: #f4f9f7;
+    background-color:#C4D7F2;
 }
 
 .weather-icon {
@@ -71,20 +63,20 @@ body {
 .temperature-value p {
     padding: 0;
     margin: 0;
-    color: #293251;
+    color: var(--main_blue);
     font-size: 4em;
     text-align: center;
 }
 
 .temperature-value span {
-    color:#293251;
+    color: var(--main_blue);
     font-size: .5em;
 }
 
 .weather-description {
     padding: 8px;
     margin: 0;
-    color: #293251;
+    color: var(--main_blue);
     text-align: center;
     font-size: 1.2em;
 }
@@ -92,7 +84,7 @@ body {
 .location p {
     margin: 0;
     padding: 0;
-    color: #293251;
+    color: var(--main_blue);
     text-align: center;
     font-size: 1.5em;
 }
