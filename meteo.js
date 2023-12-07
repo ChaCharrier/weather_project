@@ -35,7 +35,7 @@ getCity();
 
 //Get weather from API provider
 function getWeather(cityName){
-    let api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}`;
+    let api = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${key}&lang=fr`;
     
     fetch(api)
     .then(function(response){
