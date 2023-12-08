@@ -1,22 +1,20 @@
-//select elements
+// Select elements
 
 const iconElement = document.querySelector('.weather-icon');
 const temperatureElement = document.querySelector('.temperature-value p');
 const descriptionElement = document.querySelector('.weather-description');
 const locationElement = document.querySelector('.location p');
 
-// //App data
+// API Key
+const key ="07be30634a515b282b645c0064cc7830";
+
+// Const and variables
+const KELVIN = 273;
+let cityName = "" ;
 const weather = {};
 weather.temperature = {
     unit: 'celsius'
 };
-
-//Const and variables
-const KELVIN = 273;
-let cityName = "" ;
-
-//API KEY
-const key = "07be30634a515b282b645c0064cc7830";
 
 // Get city name from conf.json file
 function getCity() {
@@ -43,7 +41,6 @@ function getWeather(cityName){
         return apiData;
     })
     .then(function(apiData){
-        console.log(apiData);
         weather.temperature.value = Math.floor(apiData.main.temp - KELVIN);
         weather.description = apiData.weather[0].description;
         weather.iconId = apiData.weather[0].icon;
@@ -54,7 +51,7 @@ function getWeather(cityName){
     })
 }
 
-// //display weather 
+// Display weather 
 function displayWeather() {
     iconElement.innerHTML = `<img src="https://openweathermap.org/img/wn/${weather.iconId}@2x.png"/>`;
     temperatureElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
