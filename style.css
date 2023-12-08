@@ -9,7 +9,7 @@
 }
 
 body {
-    background: linear-gradient(to right, var(--lavender_blue), var(--light_blue), var(--light_blue), var(--light_blue));
+    background: linear-gradient(to right, var(--lavender_blue), var(--light_blue), var(--light_blue), var(--lavender_blue));
     font-family: 'Ubuntu', sans-serif;
 }
 
